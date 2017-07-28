@@ -2,7 +2,7 @@ from firebase import firebase
 import serial
 
 arduinoSerialData = serial.Serial('/dev/ttyACM1',9600)
-firebase = firebase.FirebaseApplication('https://yourdatabase.firebaseio.com/',None)
+firebase = firebase.FirebaseApplication('https://intel-hacks.firebaseio.com/',None)
 
 while(1):
     line = arduinoSerialData.readline()
